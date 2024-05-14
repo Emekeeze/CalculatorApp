@@ -1,0 +1,71 @@
+
+body {
+  background: linear-gradient(90.47deg, #6052DF -9.84%, #9932D7 99.72%);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.input{margin-bottom: 20px;}
+.input input {
+  height: 50px; /* Adjust the height to your preference */
+  font-size: 20px;
+  text-align: right;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button.clear {
+  grid-column: span 2;
+}
+
+button.c {
+  background-color: #ff5722;
+  color: white;
+}
+
+button.divide {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.multiply {
+  background-color: #ffeb3b;
+  color: #333;
+}
+
+button.subtract {
+  background-color: #2196f3;
+  color: white;
+}
+
+button.add {
+  background-color: #f44336;
+  color: white;
+}
+
+button.equals {
+  grid-column: span 4;
+  background-color: #795548;
+  color: white;
+}
